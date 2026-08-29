@@ -1,4 +1,9 @@
 // Create element through JS
+
+// React: object
+// ReactDOM: object
+
+
 const React = {
 
     createElement: function(tag, styles, children) {
@@ -14,10 +19,22 @@ const React = {
     }
 };
 
-const root = document.getElementById('root');
+const ReactDOM = {
+    render: function (element,root){
+        root.append(element)
+    }
+}
+
 
 const header1 = React.createElement('h1', { fontSize: '30px', backgroundColor: 'blue', color: 'white' }, 'Hello Coder Army');
 const header2 = React.createElement('h1', { fontSize: '25px', backgroundColor: 'black', color: 'white' }, 'Kaise ho aap');
 
-root.append(header1);
-root.append(header2);
+
+
+
+// const root = document.getElementById('root');
+// root.append(header1);
+// root.append(header2);
+
+ReactDOM.render(header1,document.getElementById('root'))
+ReactDOM.render(header2, document.getElementById('root'))
