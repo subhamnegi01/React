@@ -22,11 +22,13 @@ const obj = {age:20, salary: 20000}
 
 const newElement = (
     <div>
-        <h1 id= "first">Hello Coder Army {name}</h1>
-        <h2>Kaise ho aap {obj.age} </h2>
-    </div>)
+        <h1 id="first">Hello Coder Army {name}</h1>
+        <h2 style={{ backgroundColor: "black", color: "white" }}>Kaise ho aap {obj.age}</h2>
+    </div>
+);
+
 const Reactroot = ReactDOM.createRoot(document.getElementById('root'));
-Reactroot.render(newElement)
+Reactroot.render(newElement);
 
 // Reactroot.render(div1)
 
