@@ -27,8 +27,27 @@ const newElement = (
     </div>
 );
 
+
+// React Component
+// function based components
+
+function greet(){
+    return <h1>Hello India</h1>
+}
+
+const meet = () => {
+    return <h1>All are good</h1>
+}
+
+const newElement2 = greet()
+const newElement3 = meet()
+
+const newElement4 = <>{newElement2}{newElement3}</>;
+
 const Reactroot = ReactDOM.createRoot(document.getElementById('root'));
-Reactroot.render(newElement);
+// Reactroot.render(newElement);
+// Reactroot.render(newElement2);
+Reactroot.render(newElement4);
 
 // Reactroot.render(div1)
 
